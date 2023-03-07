@@ -1,5 +1,7 @@
+<script setup lang="ts">
+import { mdiPost } from "@mdi/js";
+</script>
+
 <template>
-  <div>
-    <VBtn>へい</VBtn>
-  </div>
+  <VIcon :icon="mdiPost" />
 </template>
