@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
   hooks: {
     "vite:extendConfig": (config) => {
-      config.plugins!.push(vuetify());
+      config.plugins?.push(vuetify());
     },
   },
   vite: {

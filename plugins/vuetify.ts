@@ -7,11 +7,15 @@ import {
 } from "@/helpers/themes";
 import { defaults } from "@/helpers/defaults";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import * as appAll from "vuetify/components";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
     defaults,
+    components: {
+      ...appAll,
+    },
     display: {
       mobileBreakpoint: "sm",
     },
