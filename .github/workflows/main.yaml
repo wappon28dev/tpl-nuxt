@@ -32,7 +32,7 @@ jobs:
         uses: canastro/copy-file-action@master
         with:
           source: "./vercel.json"
-          target: "./dist/vercel.json"
+          target: "./.output/public/vercel.json"
 
       - name: 🍱 Deploy to Vercel
         uses: BetaHuhn/deploy-to-vercel-action@v1
@@ -41,4 +41,4 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          WORKING_DIRECTORY: "./dist"
+          WORKING_DIRECTORY: "./.output/public"
