@@ -17,11 +17,19 @@
     "ecmaVersion": "latest",
     "parser": "@typescript-eslint/parser",
     "sourceType": "module",
-    "project": ["./tsconfig.json"],
+    "project": "./tsconfig.json",
     "extraFileExtensions": [".vue"]
   },
   "plugins": ["vue", "@typescript-eslint"],
   "rules": {
+    "@typescript-eslint/prefer-nullish-coalescing": "ignore",
+    "@typescript-eslint/strict-boolean-expressions": "ignore",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["^@/"] // Ignore Nuxt aliases
+      }
+    ],
     "no-restricted-imports": [
       "error",
       {

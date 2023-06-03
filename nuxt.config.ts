@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from "nuxt/config";
 import vuetify from "vite-plugin-vuetify";
-
 export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
@@ -19,4 +18,18 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
+  runtimeConfig: {
+    public: {
+      tenantId: "",
+      clientId: "",
+      redirectUri: "",
+      relayServerUrl: "",
+    },
+  },
+  rootDir: "src/",
+  typescript: {
+    tsConfig: {
+      extends: "@tsconfig/strictest/tsconfig.json",
+    },
+  },
 });

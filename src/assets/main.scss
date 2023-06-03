@@ -34,6 +34,10 @@
   font-style: normal;
 }
 
-* {
+html {
   font-family: "M PLUS 1p", sans-serif;
+}
+
+:root {
+  --title-bar-height: 35px;
 }
