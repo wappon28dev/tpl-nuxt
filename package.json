@@ -1,20 +1,12 @@
 {
-  "name": "@lapsquash/viewer",
-  "description": "viewer for lapsquash",
-  "version": "0.0.1",
-  "author": {
-    "name": "lapsquash",
-    "email": "wappon_28_dev@lapsquash.my.to"
-  },
   "private": true,
   "scripts": {
+    "build": "nuxt build",
     "dev": "nuxt dev",
-    "dev:server": "cd plugins/analyzer && yarn run dev",
-    "prepare": "nuxt prepare",
-    "lint": "eslint --fix"
-  },
-  "engines": {
-    "node": "<20.0.0"
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --fix src/"
   },
   "dependencies": {
     "@mdi/js": "^7.2.96",
