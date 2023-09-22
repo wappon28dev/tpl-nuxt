@@ -6,7 +6,10 @@ import { mdiPost } from "@mdi/js";
   <VApp>
     <VAppBar color="primary">
       <template #prepend>
-        <VAppBarNavIcon color="on-primary" :icon="mdiPost" />
+        <VAppBarNavIcon
+          color="on-primary"
+          :icon="mdiPost"
+        />
       </template>
       <v-app-bar-title>tpl-nuxt</v-app-bar-title>
     </VAppBar>

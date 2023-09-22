@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import CoffeeCard from "@/components/coffee-card.vue";
-
 const isLoading = ref(true);
 
 onMounted(() => (isLoading.value = false));
+
+const onClick = () => {
+  console.log("clicked");
+};
 </script>
 
 <template>
   <div>
     <div class="wide-title">
-      A Vue3 project template with<br />
+      A Vue3 project template with<br>
       Nuxt3 & Vuetify3
     </div>
-    <main>
-      <CoffeeCard />
-    </main>
   </div>
 </template>
 
